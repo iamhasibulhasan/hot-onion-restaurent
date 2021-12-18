@@ -1,0 +1,54 @@
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.search {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    text-align: center;
+    width: 50%;
+}
+
+
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 95%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: #F91944;
+    border: none;
+}
+
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    .hero-title {
+        font-size: 14px;
+    }
+
+    .search {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        text-align: center;
+        width: 64%;
+    }
+
+    .search-btn {
+        position: absolute;
+        top: 0;
+        left: 85%;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+
+}
