@@ -1,6 +1,6 @@
 <p align="center">
 <img width="30%" src="https://i.ibb.co/VxhbWPX/logo-light.png">
-</p><br/><br/>
+</p>
 
 # Hot Onion Restaurant
 1.  This is **react** learning project.
