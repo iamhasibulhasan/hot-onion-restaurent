@@ -10,6 +10,7 @@
 2.  Project dependencies-
     -   React router @5.2
     -   React bootstrap @2.0.3
+    -   React Fontawesome
     -   Firebase authentication
 3.  Image bb hosting
 

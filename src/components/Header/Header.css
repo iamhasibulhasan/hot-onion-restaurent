@@ -1,0 +1,24 @@
+.link-nav a {
+    cursor: pointer;
+    /* background-color: #F91944; */
+    /* color: white !important; */
+    border-radius: 2em;
+    padding: 0.5em 1em !important;
+    transition: background-color 0.8s;
+
+}
+
+.link-nav a:hover {
+    background-color: #F91944;
+    color: white !important;
+
+}
+
+.link-nav a:last-child {
+    background-color: #F91944;
+    color: white !important;
+    border-radius: 2em;
+    padding: 0.5em 1em !important;
+}
+
+.nav-style {}
