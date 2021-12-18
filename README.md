@@ -1,4 +1,6 @@
-<img style="width:50%; margin-left:auto;margin-right:auto; display:block" src="https://i.ibb.co/VxhbWPX/logo-light.png"/><br/><br/><br/>
+<p align="center">
+<img width="50%" src="https://i.ibb.co/VxhbWPX/logo-light.png">
+</p><br/><br/>
 
 # Hot Onion Restaurant
 1.  This is **react** learning project.
