@@ -1,5 +1,5 @@
 <p align="center">
-<img width="50%" src="https://i.ibb.co/VxhbWPX/logo-light.png">
+<img width="30%" src="https://i.ibb.co/VxhbWPX/logo-light.png">
 </p><br/><br/>
 
 # Hot Onion Restaurant
