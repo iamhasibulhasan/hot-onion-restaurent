@@ -1,0 +1,122 @@
+.food-time {}
+
+
+.food-time ul {
+    justify-content: center;
+}
+
+.food-time ul li {
+    list-style: none;
+    padding-right: 3em;
+}
+
+.food-time a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.food-time .active a {
+    color: #F91944;
+}
+
+.food-time .active :after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #F91944;
+    color: #F91944;
+}
+
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem 5rem;
+}
+
+.food-items img {
+    width: 50%;
+}
+
+.food-items .item {
+    text-align: center;
+    /* border: 1px solid #cccccc24; */
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    transition: box-shadow 0.5s;
+}
+
+.food-items .item:hover {
+    /* border: none; */
+    box-shadow: 6px 6px 45px -12px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 6px 6px 45px -12px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 6px 6px 45px -12px rgba(0, 0, 0, 0.73);
+}
+
+.item h5 {
+    font-size: 1.2rem;
+}
+
+.food-info {
+    display: inline-grid;
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+.item .price {
+    font-weight: 700;
+    background-color: #f91944;
+    width: 30%;
+    border-radius: 1rem;
+    color: white;
+}
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    .food-time a {
+        font-size: 1rem;
+
+    }
+
+    .food-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        padding: 0;
+    }
+
+    .food-items img {
+        width: 80%;
+    }
+
+    .item h5 {
+        font-size: 1.5rem;
+    }
+
+    .food-info p {
+        /* display: inline; */
+        font-size: 13px;
+    }
+
+    .item .price {
+        width: 50%;
+        font-size: 13px;
+    }
+
+
+}

@@ -5,7 +5,7 @@ import './HeroBanner.css';
 const HeroBanner = () => {
     return (
         <div className="hero mb-3">
-            <img src="https://i.ibb.co/LpGKhJx/bannerbackground.png" alt="" />
+            <img src="https://i.ibb.co/ccWGQMr/bannerbackground.png" alt="" />
             <div className="search">
                 <h2 className="hero-title">Best Food waiting for  your belly.</h2><br />
                 <div className="position-relative">
