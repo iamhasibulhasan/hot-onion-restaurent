@@ -1,0 +1,46 @@
+.choose-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.choose-details h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.choose-grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+}
+
+.choose-grids img {
+    width: 100%;
+}
+
+.grid-title {
+    display: flex;
+    align-items: center;
+}
+
+.grid-title img {
+    width: 50%;
+}
+
+.grid-title h3 {
+    margin-left: 0.8em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.grid-icon {
+    background-color: #E51A4B;
+    padding: 0.4em;
+    border-radius: 50%;
+    color: white;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: green;
+}
