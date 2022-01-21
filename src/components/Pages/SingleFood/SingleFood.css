@@ -1,0 +1,46 @@
+.single-food {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+}
+
+.price-quantity {
+    display: flex;
+    gap: 2em;
+}
+
+.price-quantity .food-price {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.price-quantity .food-quantity {
+    font-size: 1.5em;
+    font-weight: 200;
+    border: 1px solid #ccc;
+    padding: 0 1.2em;
+    border-radius: 5em;
+}
+
+.cal-cart {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.add-cart {
+    background-color: #F91944;
+    border: none;
+    border-radius: 5em;
+    font-weight: 500;
+    padding: 0.5em 2em;
+}
+
+.add-cart:hover {
+    background-color: gray;
+
+}
+
+.food-img img {
+    width: 90%;
+}

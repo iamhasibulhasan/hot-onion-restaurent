@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Pages/Home/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import SingleFood from './components/Pages/SingleFood/SingleFood';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path="/home">
-            <Home></Home>
+          <Route path="/food">
+            <SingleFood></SingleFood>
           </Route>
         </Switch>
         <Footer></Footer>
