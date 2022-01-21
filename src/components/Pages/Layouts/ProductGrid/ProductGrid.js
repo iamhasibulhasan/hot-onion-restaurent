@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProductGrid.css';
+import { Button } from 'react-bootstrap';
 
 const ProductGrid = () => {
     return (
@@ -73,6 +74,10 @@ const ProductGrid = () => {
                     </div>
                 </div>
             </div>
+            <div className='checkout-div'>
+                <Button className="checkout-btn">Checkout Your Food</Button>
+            </div>
+
         </div>
     );
 };
