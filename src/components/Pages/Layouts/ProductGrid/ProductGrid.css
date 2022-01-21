@@ -158,7 +158,8 @@
 
 
 
-/* Media queries */
+/* ===========================================Media queries=============================================== */
+
 @media only screen and (max-width: 600px) {
     .food-time a {
         font-size: 1rem;

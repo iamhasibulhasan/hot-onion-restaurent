@@ -44,3 +44,21 @@
     text-decoration: none;
     color: green;
 }
+
+/* =============================Media Queries=========================================== */
+@media only screen and (max-width: 600px) {
+    .choose-details {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .choose-grids {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+    }
+
+    .see-more {
+        margin-bottom: 1em;
+    }
+}
