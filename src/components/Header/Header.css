@@ -5,6 +5,8 @@
     border-radius: 2em;
     padding: 0.5em 1em !important;
     transition: background-color 0.8s;
+    text-decoration: none;
+    color: black;
 
 }
 

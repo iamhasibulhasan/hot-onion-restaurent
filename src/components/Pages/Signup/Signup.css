@@ -1,0 +1,28 @@
+.signup {
+    width: 40%;
+    margin: auto;
+}
+
+.signup-img {
+    text-align: center;
+}
+
+.signup img {
+    width: 40%;
+}
+
+.input-signin input {
+    background-color: #d3d3d34d;
+    border: none;
+    padding: 1em;
+}
+
+.input-signin input:focus {
+    border: none;
+    box-shadow: 0 0 0 0.10rem #f919466b;
+}
+
+.sign-in-btn {
+    background-color: #F91944;
+    border: none;
+}

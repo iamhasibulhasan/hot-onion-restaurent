@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -22,12 +23,12 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                     <Nav className="link-nav gy-5">
-                        <Nav.Link href="#home">
+                        <Link to="/">
                             <FontAwesomeIcon icon={faShoppingCart} />
-                        </Nav.Link>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#home">Login</Nav.Link>
-                        <Nav.Link href="#link">Sign up</Nav.Link>
+                        </Link>
+                        <Link to='/'>Home</Link>
+                        <Link to="/login">Login</Link>
+                        <Link to="/signup">Sign up</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
