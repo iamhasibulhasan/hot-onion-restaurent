@@ -1,3 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faGoogle } from '@fortawesome/free-solid-svg-icons';
+
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebookF } from "react-icons/fa";
+
 import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import './Login.css';
@@ -22,6 +28,20 @@ const Login = () => {
                         </Button>
                     </div>
                 </Form>
+                <div className="social-login mt-3">
+                    <div className="s-login">
+                        <div className='f-icon'><FaFacebookF /></div>
+                        <div>
+                            <a href="#">Sign in with facebook</a>
+                        </div>
+                    </div>
+                    <div className="s-login">
+                        <div className='f-icon'><FcGoogle /></div>
+                        <div>
+                            <a href="#">Sign in with google</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Container>
     );
