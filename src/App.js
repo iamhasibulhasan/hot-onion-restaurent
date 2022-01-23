@@ -8,31 +8,34 @@ import SingleFood from './components/Pages/SingleFood/SingleFood';
 import Signup from './components/Pages/Signup/Signup';
 import Login from './components/Pages/Login/Login';
 import PlaceOrder from './components/Pages/PlaceOrder/PlaceOrder';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/food">
-            <SingleFood></SingleFood>
-          </Route>
-          <Route path='/signup'>
-            <Signup></Signup>
-          </Route>
-          <Route path='/login'>
-            <Login></Login>
-          </Route>
-          <Route path='/placeorder'>
-            <PlaceOrder></PlaceOrder>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/food">
+              <SingleFood></SingleFood>
+            </Route>
+            <Route path='/signup'>
+              <Signup></Signup>
+            </Route>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/placeorder'>
+              <PlaceOrder></PlaceOrder>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

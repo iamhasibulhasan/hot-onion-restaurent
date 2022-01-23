@@ -4,8 +4,10 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import useAuth from './../../hooks/useAuth';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <Navbar bg="light" expand="lg" sticky='top'>
             <Container>
@@ -27,8 +29,16 @@ const Header = () => {
                             <FontAwesomeIcon icon={faShoppingCart} />
                         </Link>
                         <Link to='/'>Home</Link>
-                        <Link to="/login">Login</Link>
-                        <Link to="/signup">Sign up</Link>
+                        {
+                            user?.email ?
+                                <Link onClick={logOut} to="/">Logout</Link> :
+                                <Link to="/login">Login</Link>
+                        }
+                        {
+                            user?.email ?
+                                <Link to="/">{user.displayName}</Link> :
+                                <Link to="/signup">Signup</Link>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>
